@@ -45,14 +45,9 @@ const Landing=()=>{
                         MiniVerse
                     </motion.div>
                     <div className="flex gap-4">
-                        <Link to="/login">
+                        <Link to="/loginregister">
                             <button>
                                 Login
-                            </button>
-                        </Link>
-                        <Link to="/register">
-                            <button>
-                                Register
                             </button>
                         </Link>
                     </div>

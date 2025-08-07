@@ -4,11 +4,11 @@ import { NavLink } from "react-router-dom"
 const Sidebar = () => {
    const navItems = [
         { name: 'Dashboard', path: '/dashboard'  ,icon: HomeIcon },
-        { name: 'Calculator', path: '/apps/calculator' ,icon: CalculatorIcon },
-        { name: 'Calender', path: '/apps/calender' ,icon: CalendarDateRangeIcon },
-        { name: 'Weather', path: '/apps/weather' ,icon: SunIcon },
-        { name: 'Tasks', path: '/apps/tasks' ,icon: ClipboardDocumentListIcon },
-        { name: 'Notes', path: '/apps/notes' ,icon: DocumentTextIcon },
+        { name: 'Calculator', path: '/calculator' ,icon: CalculatorIcon },
+        { name: 'Calender', path: '/calender' ,icon: CalendarDateRangeIcon },
+        { name: 'Weather', path: '/weather' ,icon: SunIcon },
+        { name: 'Tasks', path: '/tasks' ,icon: ClipboardDocumentListIcon },
+        { name: 'Notes', path: '/notes' ,icon: DocumentTextIcon },
    ]   
     
         return (
