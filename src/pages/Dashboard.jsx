@@ -19,35 +19,35 @@ const Dashboard =()=>{
             title: "Task Manager",
             desc: "Manage your tasks efficiently",
             image: "/",
-            component: <Tasks />
+            component: <Tasks setActiveApp={setActiveApp} />
         },
         {
             id: "weather",
             title: "Weather App",
             desc: "Check weather in your city",
             image: "/",
-            component: <Weather />
+            component: <Weather setActiveApp={setActiveApp} />
         },
         {
             id: "calculator",
             title: "Calculator",
             desc: "Simple calculator tool",
             image: "/",
-            component: <Calculator />,
+            component: <Calculator setActiveApp={setActiveApp} />,
         },
         {
             id: "calender",
             title: "Calender",
             desc: "Manage your events",
             image: "/",
-            component: <Calender />,
+            component: <Calender setActiveApp={setActiveApp} />,
         },
         {
             id: "notes",
             title: "Notes",
             desc: "Write your creative thoughts here",
             image: "/",
-            component: <Notes />,
+            component: <Notes setActiveApp={setActiveApp} />,
         },
 
     ]
@@ -57,12 +57,12 @@ const Dashboard =()=>{
     return(
         <div className="flex h-screen">
             <Sidebar setActiveApp ={setActiveApp} />
-            <div className="flex flex flex-col flex-grow">
+            <div className="flex flex-col flex-grow">
                 <Navbar />
                 <main className="mt-16 ml-64 p-4">
                     <div className="p-6 overflow-y-auto">
                         {!activeApp ? (
-                        <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
                             {miniApps.map(app=>(
                                 <MiniCard 
                                     key = {app.id}
