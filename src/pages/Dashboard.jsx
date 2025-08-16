@@ -18,7 +18,7 @@ const Dashboard =()=>{
             id: "tasks",
             title: "Task Manager",
             desc: "Manage your tasks efficiently",
-            image: "/",
+            image: "/src/assets/tasks.png",
             component: <Tasks setActiveApp={setActiveApp} />
         },
         {
@@ -32,7 +32,7 @@ const Dashboard =()=>{
             id: "calculator",
             title: "Calculator",
             desc: "Simple calculator tool",
-            image: "/",
+            image: "/src/assets/calculator.png",
             component: <Calculator setActiveApp={setActiveApp} />,
         },
         {
