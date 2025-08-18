@@ -32,7 +32,7 @@ const Dashboard =()=>{
             id: "calculator",
             title: "Calculator",
             desc: "Simple calculator tool",
-            image: "public/calculator.png",
+            image: "/public/calculator.png",
             component: <Calculator setActiveApp={setActiveApp} />,
         },
         {
