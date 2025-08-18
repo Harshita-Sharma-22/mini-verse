@@ -18,7 +18,7 @@ const Dashboard =()=>{
             id: "tasks",
             title: "Task Manager",
             desc: "Manage your tasks efficiently",
-            image: "public/images/tasks.png",
+            image: "/images/tasks.png",
             component: <Tasks setActiveApp={setActiveApp} />
         },
         {
@@ -32,7 +32,7 @@ const Dashboard =()=>{
             id: "calculator",
             title: "Calculator",
             desc: "Simple calculator tool",
-            image: "public/images/calculator.png",
+            image: "/images/calculator.png",
             component: <Calculator setActiveApp={setActiveApp} />,
         },
         {
@@ -46,7 +46,7 @@ const Dashboard =()=>{
             id: "notes",
             title: "Notes",
             desc: "Write your creative thoughts here",
-            image: "/public/images/notes.png",
+            image: "/images/notes.png",
             component: <Notes setActiveApp={setActiveApp} />,
         },
 
