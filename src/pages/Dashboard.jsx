@@ -46,7 +46,7 @@ const Dashboard =()=>{
             id: "notes",
             title: "Notes",
             desc: "Write your creative thoughts here",
-            image: "/",
+            image: "/src/assets/notes.png",
             component: <Notes setActiveApp={setActiveApp} />,
         },
 
